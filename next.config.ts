@@ -9,9 +9,6 @@ const nextConfig: NextConfig = {
     // Disable TypeScript errors during builds for demo purposes
     ignoreBuildErrors: true,
   },
-  images: {
-    domains: ['localhost'],
-  },
 };
 
 export default nextConfig;
