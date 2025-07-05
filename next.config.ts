@@ -1,6 +1,4 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+const nextConfig = {
   eslint: {
     // Disable ESLint during builds for demo purposes
     ignoreDuringBuilds: true,
