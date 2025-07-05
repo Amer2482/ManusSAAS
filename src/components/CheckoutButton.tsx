@@ -1,3 +1,5 @@
+'use client';
+
 interface CheckoutButtonProps {
   priceId: string;
   planName: string;
