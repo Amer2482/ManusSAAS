@@ -3,7 +3,7 @@ import GoogleProvider from "next-auth/providers/google";
 import EmailProvider from "next-auth/providers/email";
 import { MongoDBAdapter } from "@auth/mongodb-adapter";
 import { MongoClient } from "mongodb";
-import { sendEmail } from "@/lib/resend";
+import { sendEmail } from "@/lib/email/resend";
 
 // Use a fallback MongoDB URI that won't cause connection errors in development
 const mongoUri = process.env.MONGODB_URI || "mongodb://localhost:27017/saasfast";
