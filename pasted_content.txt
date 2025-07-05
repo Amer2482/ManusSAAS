@@ -1,0 +1,68 @@
+Please note: the full set of instructions will arrive in 10 separate parts. Do not begin development until you have received all 10 parts—adapt your build process accordingly. Copy and paste each numbered prompt into the AI Website Builder in order.
+Part 1 of 10 – Project Overview
+“Build me a complete, production‑ready SaaS landing site based on the SaaSFast Next.js template. Use all the details I will provide across these 10 parts. Generate the full code and folder structure, plus a README with deployment instructions. I will monitor progress and provide troubleshooting prompts as needed.”
+Part 2 of 10 – Landing Page Structure
+“Create a homepage with:
+A header including logo, nav links (Home, Features, Pricing, FAQ, Contact) and a primary CTA.
+Hero section: headline, sub‑headline, supporting image, social proof line, and “Get Started” button.
+Problem/solution section explaining core pain points and our solution.
+Features grid (4–5 items) with title, description, and optional media.
+‘With vs. Without’ component comparing us to competitors.
+Pricing plans section (3 tiers) highlighting the recommended plan.
+FAQ accordion with common questions.
+Testimonials carousel (3–5 quotes) and social proof bar (customer logos).
+Full‑width final CTA before footer.
+Footer with logo, slogan, and legal links (Privacy Policy, Terms of Service).”
+Part 3 of 10 – Authentication & Dashboard
+“Integrate NextAuth with Google OAuth and Magic Links.
+Secure all /app/api routes using NextAuth.
+Create a /dashboard page that shows the logged‑in user’s name and email.
+Ensure session management, login, logout flows, and email verification are functional.”
+Part 4 of 10 – Database & Email
+“Wire up MongoDB for user storage and lead capture (use MONGODB_URI).
+Use Mailgun (or Resend) for transactional and marketing emails (MAILGUN_API_KEY or RESEND_API_KEY).
+Create an email template for welcome emails and passwordless login links.
+Include a Spam Prevention Checklist to avoid email blocking.”
+Part 5 of 10 – Payments & Analytics
+“Configure Stripe Checkout and Subscriptions:
+One‑time and recurring plans with product and price IDs.
+Webhook handling at /api/webhook/stripe using STRIPE_WEBHOOK_SECRET.
+Add a basic analytics snippet (DataFast or Google Analytics) site‑wide.”
+Part 6 of 10 – SEO & Blog
+“Set up global SEO tags in /app/layout.js using getSEOTags.
+Generate sitemap.xml and robots.txt at build time.
+Optional blog section under /app/blog that reads markdown or JSON content and renders posts with metadata.”
+Part 7 of 10 – Styling & Assets
+“Use TailwindCSS with daisyUI and enable light/dark themes.
+Apply the template’s component structure under /components.
+Import custom Google Fonts via next/font/google in layout.
+Generate and include these assets in /public and /app:
+• apple-icon.png & favicon.ico (from favicon zip)
+• logoAndName.png (rectangular logo)
+• opengraph-image.png & twitter-image.png (1200×660 social‑share images)”
+Part 8 of 10 – Repository & CI/CD
+“Initialize a fresh Git repo, connect to GitHub, and push your code.
+Provide .github/workflows/ci.yml (or Vercel settings) for CI: run npm install, npm run build, npm test.
+Ensure branch protection and automatic deployment on merge to main.”
+Part 9 of 10 – Deployment & Verification
+“Deploy to Vercel (or equivalent) with these environment variables set in production:
+NEXTAUTH_URL=https://<your‑domain>
+NEXTAUTH_SECRET=<secret>
+MONGODB_URI=<string>
+MAILGUN_API_KEY=<key>
+STRIPE_PUBLIC_KEY=<key>
+STRIPE_SECRET_KEY=<key>
+STRIPE_WEBHOOK_SECRET=<key>
+CRISP_WEBSITE_ID=<id>
+Verify domain DNS, SSL certificate, and custom domain setup.
+Test authentication flows, payment checkout, email sending, and private pages.
+Confirm sitemap, robots.txt, and analytics are active.”
+Part 10 of 10 – Pre‑Request Checklist
+“Before you build, I will complete:
+Once I say “Go,” commence the build using all 10 parts above.”
+Cloned SaaSFast template and reset Git remote.
+Created .env.local with all keys.
+Set up MongoDB Atlas, Stripe account (products/prices), Mailgun/Resend domain, and Crisp chat widget.
+Prepared logos, favicons, and social images as specified.
+Purchased and configured my custom domain and hosting.
+Ran npm run dev locally to confirm no errors

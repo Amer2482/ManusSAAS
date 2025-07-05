@@ -1,0 +1,64 @@
+{
+  "name": "saasfast-project",
+  "version": "1.0.0",
+  "description": "Complete SaaS template with Next.js, authentication, payments, and everything you need to launch your SaaS business",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [
+    "saas",
+    "nextjs",
+    "react",
+    "typescript",
+    "stripe",
+    "nextauth",
+    "mongodb",
+    "tailwindcss",
+    "template",
+    "boilerplate"
+  ],
+  "author": "SaaSFast Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/saasfast-project.git"
+  },
+  "dependencies": {
+    "@auth/mongodb-adapter": "^3.10.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/nodemailer": "^6.4.17",
+    "bcryptjs": "^3.0.2",
+    "daisyui": "^5.0.43",
+    "mongodb": "^6.17.0",
+    "next": "15.3.5",
+    "next-auth": "^4.24.11",
+    "nodemailer": "^6.10.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "resend": "^4.6.0",
+    "stripe": "^18.3.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.5",
+    "prettier": "^3.0.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}

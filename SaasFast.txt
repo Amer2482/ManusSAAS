@@ -1,0 +1,199 @@
+Contents:
+SaaSFast
+
+-   Get Started!
+
+-   Lessons
+
+    -   Ship in 5 minutes
+
+    -   Static Page
+
+    -   User Authentication
+
+    -   API Handling
+
+    -   Private Pages
+
+    -   Stripe Subscriptions
+
+    -   Privacy Policy & Terms
+
+-   Features
+
+    -   SEO Tags
+
+    -   Database
+
+    -   Email
+
+    -   Payments
+
+    -   Google Authentication (OAuth)
+
+    -   Magic Links
+
+    -   Customer Support
+
+    -   Error Handling
+
+    -   Analytics
+
+-   Components
+
+    -   Components
+
+    -   Header
+
+    -   Hero Section
+
+    -   Features Listicle
+
+    -   Features Accordion
+
+    -   WithWithout
+
+    -   Call To Action (CTA)
+
+    -   Pricing Section
+
+    -   FAQ Section
+
+    -   Testimonial Small
+
+    -   Testimonial Single
+
+    -   Testimonial Triple
+
+    -   Testimonial Grid
+
+    -   Footer
+
+    -   Button Lead
+
+    -   Button Checkout
+
+    -   Button Sign-in
+
+    -   Button Gradient
+
+    -   Tabs
+
+    -   Modal
+
+-   Deployment
+
+-   Extras
+
+Table of contents
+
+-   Welcome to SaaSFast, Innovator 
+
+Let’s Get Started!
+
+Welcome to SaaSFast, Innovator
+
+This is your quick guide to getting the template up and running with
+ease.¶
+
+Once you’re done, jump straight into this quick-start guide to launch
+your project in just 5 minutes.
+
+It’s time to turn your idea into a real startup—fast ⚡️
+
+Run the Local Server¶
+
+Open your terminal and run the following commands step-by-step:
+
+git clone https://github.com/Marc-Lou-Org/SaaSFast.git [YOUR_APP_NAME]
+
+cd [YOUR_APP_NAME]
+
+npm install
+
+git remote remove origin
+
+npm run dev
+
+Rename the .env.local¶
+
+mv .env.example .env.local
+
+Then open this link in your browser:¶
+
+http://localhost:3000 — and boom! Your site is live ✅
+
+You may see some warnings in the console. Don’t worry—they’re harmless
+and won’t break the app.
+
+SaaSFast Project Structure (NextJS)¶
+
+-   /app → Your pages (Each folder + page.js = one page)
+
+-   /app/api → Your API routes (One file = one endpoint)
+
+-   /components → Reusable React components
+
+-   /libs → Helper functions and integrations (Stripe, Resend, auth,
+    etc.)
+
+-   /models → Database schemas
+
+config.js File¶
+
+This is where your app settings live. Each key is documented so you know
+exactly what it does and how to use it. Take time to go through it—it’s
+the backbone of your app.
+
+.env File¶
+
+Rename .env.example to .env.local and update the NEXTAUTH_SECRET value
+to something secure (at least 15 characters).
+
+Here’s how it should look:
+
+NEXTAUTH_URL=http://localhost:3000
+
+NEXTAUTH_SECRET=your_secure_secret_here
+
+GOOGLE_ID=
+
+GOOGLE_SECRET=
+
+MONGODB_URI=
+
+RESEND_API_KEY=
+
+STRIPE_PUBLIC_KEY=
+
+STRIPE_SECRET_KEY=
+
+STRIPE_WEBHOOK_SECRET=
+
+-   Lessons
+
+-   Ship in 5 minutes
+
+  Launch Your Startup and Reach Customers in Just 5 Minutes ⚡️¶
+
+Now it’s time to build a clean landing page and optionally add a
+waitlist form to collect emails. Complete this guide and your project
+will be featured on our homepage ⭐️
+
+Haven’t set things up yet? Clone the repo and start your local server
+first. Check the “Get Started” guide here → Let’s Begin Then, delete all
+the content in /app/page.js and paste the code below:
+
+import { Suspense } from 'react'
+
+import Header from "@/components/Header";
+
+import Hero from "@/components/Hero";
+
+import Problem from "@/components/Problem";
+
+import FeaturesAccordion from "@/components/FeaturesAccordion";
+
+import Pricing from "@/components/Pricing";
+
+import FAQ from "@/components/FAQ";
